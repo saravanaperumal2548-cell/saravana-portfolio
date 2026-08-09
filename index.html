@@ -11,75 +11,241 @@
 
 <body>
 
-    <main class="container">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SARAVANA<span>.</span></div>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Hi, I'm Saravana 👋</h1>
-
-            <h2>Student Developer 💻 | Video Editor 🎬</h2>
-
-            <p>
-                I create digital experiences through code and creative visuals.
-                I'm passionate about learning technology, building projects,
-                and bringing ideas to life.
-            </p>
-        </section>
-
-
-        <!-- About Section -->
-        <section>
-            <h2>About Me 👨‍💻</h2>
-
-            <p>
-                I'm a student developer currently learning programming,
-                web development, and modern technologies.
-                I also enjoy video editing and creative design.
-            </p>
-        </section>
-
-
-        <!-- Skills Section -->
-        <section>
-            <h2>My Skills 🛠️</h2>
-
-            <div class="skills">
-                <div class="skill">💻 Programming</div>
-                <div class="skill">🌐 Web Development</div>
-                <div class="skill">🎬 Video Editing</div>
-                <div class="skill">🎨 Creative Design</div>
-                <div class="skill">🚀 Problem Solving</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-        </section>
+        </nav>
+    </header>
 
 
-        <!-- Goal Section -->
-        <section>
-            <h2>My Goal 🚀</h2>
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">HELLO, I'M</p>
+
+            <h1>Saravana<span>.</span></h1>
+
+            <h2>
+                Student Developer <span>|</span> Video Editor
+            </h2>
+
+            <p class="hero-description">
+                I build digital experiences through code and create
+                engaging visual stories through video editing.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Work 🚀</a>
+                <a href="#contact" class="btn secondary">Let's Connect</a>
+            </div>
+
+        </div>
+
+        <div class="hero-glow"></div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                💻
+            </div>
+
+            <div>
+                <h3>Developer + Creative</h3>
+
+                <p>
+                    I'm a student developer passionate about programming,
+                    technology, and creative work. I enjoy learning new
+                    technologies and turning ideas into real projects.
+                </p>
+
+                <p>
+                    Alongside development, I also enjoy video editing,
+                    visual storytelling, and creative design.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <p>WHAT I WORK WITH</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Programming</h3>
+                <p>Learning programming and software development.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Creating modern and responsive websites.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎬</div>
+                <h3>Video Editing</h3>
+                <p>Editing videos and creating engaging visual content.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Creative Design</h3>
+                <p>Exploring creative ideas and digital design.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <div class="project-number">01</div>
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A modern portfolio website built to showcase
+                    my development and creative skills.
+                </p>
+
+                <span>HTML • CSS • GitHub Pages</span>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">02</div>
+
+                <h3>Coming Soon</h3>
+
+                <p>
+                    New development project coming soon.
+                    Stay tuned for something exciting.
+                </p>
+
+                <span>In Development 🚀</span>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">03</div>
+
+                <h3>Video Projects</h3>
+
+                <p>
+                    A collection of creative video editing
+                    projects and visual experiments.
+                </p>
+
+                <span>Video Editing • Creative</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Goal -->
+    <section class="section goal-section">
+
+        <div class="goal-card">
+
+            <p>MY VISION</p>
+
+            <h2>Learn. Build. Create. Repeat. 🚀</h2>
 
             <p>
-                My goal is to become a skilled software developer while
-                continuing to grow as a creative video editor.
+                My goal is to become a skilled software developer
+                while continuing to grow as a creative professional.
             </p>
-        </section>
+
+        </div>
+
+    </section>
 
 
-        <!-- Contact Section -->
-        <section>
-            <h2>Let's Connect 🤝</h2>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
 
-            <p>
-                I'm always interested in learning, creating, and working
-                on exciting projects.
-            </p>
-        </section>
+        <div class="section-title">
+            <p>LET'S CONNECT</p>
+            <h2>Have an idea?</h2>
+        </div>
+
+        <p>
+            I'm always interested in learning, creating,
+            and working on exciting projects.
+        </p>
+
+        <a href="mailto:saravanaperumal2548@gmail.com" class="btn primary">
+            Contact Me ✉️
+        </a>
+
+    </section>
 
 
-        <footer>
-            <p>© 2026 Saravana. Built with HTML & CSS.</p>
-        </footer>
+    <!-- Footer -->
+    <footer>
 
-    </main>
+        <div class="logo">SARAVANA<span>.</span></div>
+
+        <p>
+            Student Developer • Video Editor
+        </p>
+
+        <p class="copyright">
+            © 2026 Saravana. Built with passion & code.
+        </p>
+
+    </footer>
+
 
 </body>
 </html>
