@@ -459,6 +459,33 @@ footer p {
         border-color: #00e5ff;
     }
 
+    /* Fix typing animation layout */
+
+#typing-text {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    font-size: inherit !important;
+    line-height: 1.2 !important;
+    color: #00e5ff !important;
+    border-right: 3px solid #00e5ff;
+    padding-right: 8px;
+    min-height: 1.2em;
+}
+
+.hero h2 {
+    white-space: nowrap !important;
+}
+
+@media (max-width: 700px) {
+    .hero h2 {
+        white-space: normal !important;
+    }
+
+    #typing-text {
+        white-space: normal !important;
+    }
+}
+
     51%, 100% {
         border-color: transparent;
     }
