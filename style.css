@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(8, 11, 20, 0.88);
+    background: rgba(8, 11, 20, 0.9);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -58,7 +58,7 @@ header {
     color: #cbd5e1;
     text-decoration: none;
     font-size: 15px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -83,7 +83,7 @@ header {
 
 .hero-content {
     width: 100%;
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
     position: relative;
     z-index: 2;
@@ -143,30 +143,28 @@ header {
 }
 
 @keyframes blinkCursor {
-    0%,
-    50% {
+    0%, 50% {
         border-color: #00e5ff;
     }
 
-    51%,
-    100% {
+    51%, 100% {
         border-color: transparent;
     }
 }
 
 .hero-description {
     max-width: 650px;
-    margin: 0 auto;
+    margin: auto;
     color: #94a3b8;
     font-size: 17px;
 }
 
 .hero-buttons {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
@@ -176,7 +174,7 @@ header {
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn.primary {
@@ -210,32 +208,31 @@ header {
 }
 
 /* =========================
-   GENERAL SECTIONS
+   COMMON SECTIONS
 ========================= */
 
 .section {
     max-width: 1100px;
     margin: auto;
-    padding: 110px 20px;
+    padding: 100px 20px;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .section-title p,
 .section-title span {
     color: #00e5ff;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 13px;
-    font-weight: 700;
     margin-bottom: 10px;
+    display: block;
 }
 
 .section-title h2 {
-    font-size: 44px;
-    margin-top: 10px;
+    font-size: 42px;
 }
 
 /* =========================
@@ -243,9 +240,9 @@ header {
 ========================= */
 
 .about-section {
-    padding: 120px 8%;
+    padding: 120px 20px;
     background: #080d18;
-    color: #ffffff;
+    color: #fff;
 }
 
 .about-container {
@@ -358,7 +355,7 @@ header {
 
 .about-quote p {
     display: inline;
-    color: #ffffff;
+    color: #fff;
     font-size: 17px;
     font-weight: 600;
 }
@@ -368,9 +365,9 @@ header {
 ========================= */
 
 .skills-section {
-    padding: 120px 8%;
+    padding: 120px 20px;
     background: #060b14;
-    color: #ffffff;
+    color: #fff;
 }
 
 .skills-grid {
@@ -458,12 +455,12 @@ header {
     min-height: 260px;
     background: linear-gradient(
         145deg,
-        rgba(255, 255, 255, 0.06),
-        rgba(255, 255, 255, 0.02)
+        rgba(255,255,255,0.06),
+        rgba(255,255,255,0.02)
     );
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 20px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .project-card:hover {
@@ -505,10 +502,10 @@ header {
     border-radius: 25px;
     background: linear-gradient(
         135deg,
-        rgba(0, 229, 255, 0.08),
-        rgba(255, 255, 255, 0.03)
+        rgba(0,229,255,0.08),
+        rgba(255,255,255,0.03)
     );
-    border: 1px solid rgba(0, 229, 255, 0.15);
+    border: 1px solid rgba(0,229,255,0.15);
 }
 
 .goal-card > p:first-child {
@@ -546,7 +543,7 @@ header {
 footer {
     text-align: center;
     padding: 50px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 footer p {
@@ -559,45 +556,42 @@ footer p {
 }
 
 /* =========================
-   TABLET
+   MOBILE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     .nav-links {
-        gap: 15px;
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-container {
         grid-template-columns: 1fr;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .about-card,
+    .about-highlight {
+        padding: 28px;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
+    .section-title h2 {
+        font-size: 38px;
     }
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .navbar {
-        padding: 18px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        padding: 120px 20px 70px;
-    }
+@media (max-width: 600px) {
 
     .profile-photo {
         width: 150px;
@@ -609,76 +603,19 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     #typing-text {
         white-space: normal;
     }
 
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .section {
-        padding: 80px 20px;
-    }
-
-    .about-section,
-    .skills-section {
-        padding: 80px 6%;
-    }
-
-    .section-title h2 {
-        font-size: 38px;
-    }
-
-    .about-card,
-    .about-highlight {
-        padding: 28px;
-    }
-
     .skills-grid {
         grid-template-columns: 1fr;
     }
 
-    .skill-card {
-        padding: 28px;
-    }
-
-    .goal-card h2 {
-        font-size: 30px;
-    }
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 500px) {
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero h2 {
-        font-size: 21px;
-    }
-
-    .section-title h2 {
-        font-size: 32px;
-    }
-
-    .about-card,
-    .about-highlight {
-        padding: 22px;
-    }
-
-    .skill-card {
-        padding: 24px;
-    }
-
-    .project-card {
-        padding: 28px;
+    .about-section,
+    .skills-section {
+        padding: 80px 20px;
     }
 }
