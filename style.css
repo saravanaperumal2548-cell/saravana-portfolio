@@ -843,6 +843,19 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    ABOUT ME
+    Who I Am
+
+┌─────────────────────┐  ┌─────────────────────┐
+│ 👨‍💻 Student         │  │ My Journey 🚀       │
+│ Developer           │  │                     │
+│                     │  │ 01 Learning         │
+│ Description...      │  │ 02 Creating         │
+│                     │  │ 03 Growing          │
+│ 🏷 Coding            │  │                     │
+│ 🏷 Video Editing    │  │ “Learn. Create...”  │
+└─────────────────────┘  └─────────────────────┘
+
     .skills-section {
         padding: 80px 6%;
     }
