@@ -1241,3 +1241,20 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 229, 255, 0.25);
 }
+/* GitHub Button */
+
+.github-btn {
+    background: #00e5ff;
+    color: #080b14;
+    border: 1px solid #00e5ff;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(0, 229, 255, 0.15);
+}
+
+.github-btn:hover {
+    background: #ffffff;
+    color: #080b14;
+    border-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.30);
+}
