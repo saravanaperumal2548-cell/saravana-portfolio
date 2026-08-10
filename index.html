@@ -655,6 +655,30 @@
 
         typeEffect();
 
+        <script>
+const revealElements = document.querySelectorAll(
+    ".about-container, .skill-card, .project-card, .goal-card, .contact-container"
+);
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("reveal-show");
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+revealElements.forEach((element) => {
+    element.classList.add("reveal-hidden");
+    revealObserver.observe(element);
+});
+</script>
+
     </script>
 
 </body>
