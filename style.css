@@ -1076,3 +1076,100 @@ header {
         padding: 80px 20px;
     }
 }
+
+/* =========================
+   HERO ANIMATIONS
+========================= */
+
+.hero-content > * {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: heroReveal 0.8s ease forwards;
+}
+
+.hero-content .profile-photo {
+    animation-delay: 0.1s;
+}
+
+.hero-content .small-text {
+    animation-delay: 0.25s;
+}
+
+.hero-content h1 {
+    animation-delay: 0.4s;
+}
+
+.hero-content h2 {
+    animation-delay: 0.55s;
+}
+
+.hero-content .hero-description {
+    animation-delay: 0.7s;
+}
+
+.hero-content .hero-buttons {
+    animation-delay: 0.85s;
+}
+
+@keyframes heroReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile glow */
+
+.profile-photo {
+    animation:
+        profileReveal 0.8s ease forwards,
+        profileGlow 3s ease-in-out infinite;
+}
+
+@keyframes profileReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes profileGlow {
+    0%, 100% {
+        box-shadow: 0 0 35px rgba(0,229,255,0.20);
+    }
+
+    50% {
+        box-shadow: 0 0 55px rgba(0,229,255,0.40);
+    }
+}
+
+/* Hero buttons */
+
+.hero-buttons .btn {
+    transition: 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-5px);
+}
+
+/* Background glow */
+
+.hero-glow {
+    animation: glowMove 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+    from {
+        transform: translate(-40px, -20px) scale(0.9);
+    }
+
+    to {
+        transform: translate(40px, 30px) scale(1.1);
+    }
+}
