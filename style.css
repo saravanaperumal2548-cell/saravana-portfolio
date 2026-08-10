@@ -652,7 +652,7 @@ header {
 }
 
 /* =========================
-   GOAL
+   GOAL / VISION
 ========================= */
 
 .goal-section {
@@ -660,29 +660,96 @@ header {
 }
 
 .goal-card {
-    padding: 70px 30px;
-    border-radius: 25px;
-    background: linear-gradient(
-        135deg,
-        rgba(0,229,255,0.08),
-        rgba(255,255,255,0.03)
-    );
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 40px;
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,229,255,0.08),
+            rgba(124,58,237,0.06),
+            rgba(255,255,255,0.02)
+        );
     border: 1px solid rgba(0,229,255,0.15);
+    position: relative;
+    overflow: hidden;
 }
 
-.goal-card > p:first-child {
+.goal-card::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -100px;
+    background: #00e5ff;
+    opacity: 0.05;
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.goal-label {
     color: #00e5ff;
-    letter-spacing: 3px;
     font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
 
 .goal-card h2 {
-    font-size: 40px;
+    font-size: clamp(32px, 5vw, 52px);
     margin: 20px 0;
+    line-height: 1.2;
 }
 
-.goal-card p:last-child {
+.goal-card h2 span {
+    color: #00e5ff;
+}
+
+.goal-card > p {
+    max-width: 700px;
+    margin: auto;
     color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.goal-points {
+    max-width: 700px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.goal-point {
+    padding: 18px 10px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.goal-point strong {
+    display: block;
+    color: #00e5ff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.goal-point span {
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+@media (max-width: 700px) {
+
+    .goal-card {
+        padding: 55px 25px;
+    }
+
+    .goal-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* =========================
