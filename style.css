@@ -1227,14 +1227,17 @@ header {
 /* GitHub Button */
 
 .github-btn {
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(255,255,255,0.04);
-    color: #ffffff;
+    background: #ffffff;
+    color: #080b14;
+    border: 1px solid #ffffff;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.08);
 }
 
 .github-btn:hover {
-    background: #ffffff;
+    background: #00e5ff;
     color: #080b14;
-    border-color: #ffffff;
+    border-color: #00e5ff;
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.25);
 }
