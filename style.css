@@ -1223,3 +1223,18 @@ header {
 .project-card:nth-child(3) {
     transition-delay: 0.3s;
 }
+
+/* GitHub Button */
+
+.github-btn {
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.04);
+    color: #ffffff;
+}
+
+.github-btn:hover {
+    background: #ffffff;
+    color: #080b14;
+    border-color: #ffffff;
+    transform: translateY(-5px);
+}
