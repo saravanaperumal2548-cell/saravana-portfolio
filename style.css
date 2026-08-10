@@ -1258,3 +1258,71 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 229, 255, 0.30);
 }
+
+/* =========================
+   TECH STACK
+========================= */
+
+.tech-section {
+    padding: 120px 20px;
+    background: #080b14;
+}
+
+.tech-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tech-card {
+    padding: 30px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,229,255,0.12);
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 15px 35px rgba(0,229,255,0.12);
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(0,229,255,0.08);
+    font-size: 28px;
+}
+
+.tech-card h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.tech-card p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
