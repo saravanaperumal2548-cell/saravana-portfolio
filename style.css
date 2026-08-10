@@ -751,7 +751,6 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 /* =========================
    CONTACT
 ========================= */
@@ -780,7 +779,7 @@ header {
 }
 
 .contact-heading h2 {
-    font-size: clamp(42px, 6vw, 65px);
+    font-size: 55px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
@@ -793,25 +792,16 @@ header {
     line-height: 1.8;
 }
 
-/* Email Card */
-
 .contact-card {
     max-width: 700px;
     margin: auto;
-    padding: 25px 30px;
+    padding: 25px;
     display: flex;
     align-items: center;
     gap: 20px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(0,229,255,0.15);
     border-radius: 18px;
-    transition: 0.4s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-6px);
-    border-color: #00e5ff;
-    box-shadow: 0 15px 40px rgba(0,229,255,0.12);
 }
 
 .contact-card-icon {
@@ -834,14 +824,12 @@ header {
     color: #94a3b8;
     font-size: 12px;
     margin-bottom: 4px;
-    letter-spacing: 1px;
 }
 
 .contact-card-content a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
 }
 
 .contact-card-content a:hover {
@@ -859,15 +847,7 @@ header {
     color: #05070c;
     text-decoration: none;
     font-size: 22px;
-    font-weight: bold;
-    transition: 0.3s ease;
 }
-
-.contact-arrow:hover {
-    transform: translate(4px, -4px);
-}
-
-/* Social Links */
 
 .contact-socials {
     max-width: 700px;
@@ -878,26 +858,20 @@ header {
 }
 
 .social-link {
-    padding: 18px 20px;
+    padding: 18px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
     background: rgba(255,255,255,0.02);
     color: #cbd5e1;
     text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s ease;
 }
 
 .social-link:hover {
     color: #00e5ff;
     border-color: #00e5ff;
-    transform: translateY(-4px);
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
 
@@ -905,20 +879,19 @@ header {
         padding: 80px 20px;
     }
 
-    .contact-card {
-        padding: 20px;
+    .contact-heading h2 {
+        font-size: 40px;
+    }
+
+    .contact-socials {
+        grid-template-columns: 1fr;
     }
 
     .contact-card-content a {
         font-size: 13px;
         word-break: break-word;
     }
-
-    .contact-socials {
-        grid-template-columns: 1fr;
-    }
 }
-
 /* =========================
    FOOTER
 ========================= */
