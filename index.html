@@ -44,52 +44,44 @@
 
     <div class="hero-inner">
 
-        <!-- Small Intro -->
         <div class="hero-label">
             <span class="hero-line"></span>
             <span>WELCOME TO MY PORTFOLIO</span>
         </div>
 
-        <!-- Main Heading -->
         <h1>
-            I'm <span>Saravana.</span>
+            Hi, I'm <span>Saravana.</span>
         </h1>
 
-        <!-- Typing Text -->
         <h2>
             <span id="typing-text"></span>
         </h2>
 
-        <!-- Description -->
         <p class="hero-description">
-            I build modern digital experiences as a Full Stack Developer
-            and create engaging visual stories through Video Editing.
+            I build modern web experiences as a Full Stack Developer,
+            create engaging videos through Video Editing,
+            and explore creative work through CamboY.
         </p>
 
-        <!-- Buttons -->
         <div class="hero-buttons">
 
             <a href="#projects" class="hero-btn hero-btn-primary">
-                View My Work
-                <span>→</span>
+                View My Work <span>→</span>
             </a>
 
             <a href="#contact" class="hero-btn hero-btn-secondary">
-                Let's Connect
-                <span>↗</span>
+                Let's Connect <span>↗</span>
             </a>
 
             <a href="https://github.com/saravanaperumal2548-cell"
                class="hero-btn hero-btn-github"
                target="_blank"
                rel="noopener noreferrer">
-                GitHub
-                <span>↗</span>
+                GitHub <span>↗</span>
             </a>
 
         </div>
 
-        <!-- Bottom Info -->
         <div class="hero-info">
 
             <div class="hero-info-item">
@@ -111,6 +103,14 @@
             <div class="hero-info-item">
                 <span class="hero-info-number">03</span>
                 <div>
+                    <strong>CAMBOY</strong>
+                    <small>CREATIVE WORK</small>
+                </div>
+            </div>
+
+            <div class="hero-info-item">
+                <span class="hero-info-number">04</span>
+                <div>
                     <strong>COLLEGE</strong>
                     <small>STUDENT</small>
                 </div>
@@ -120,78 +120,13 @@
 
     </div>
 
-    <!-- Decorative Elements -->
     <div class="hero-bg-number">01</div>
     <div class="hero-red-glow"></div>
 
 </section>
 
 
-<!-- =========================
-     HERO TYPING SCRIPT
-========================= -->
 
-<script>
-
-const heroTexts = [
-    "Full Stack Developer",
-    "Video Editor",
-    "Creative Developer"
-];
-
-let heroTextIndex = 0;
-let heroCharIndex = 0;
-let heroDeleting = false;
-
-function heroTypeEffect() {
-
-    const typingElement = document.getElementById("typing-text");
-
-    if (!typingElement) return;
-
-    const currentText = heroTexts[heroTextIndex];
-
-    if (!heroDeleting) {
-
-        typingElement.textContent =
-            currentText.substring(0, heroCharIndex + 1);
-
-        heroCharIndex++;
-
-        if (heroCharIndex === currentText.length) {
-
-            heroDeleting = true;
-
-            setTimeout(heroTypeEffect, 1600);
-
-            return;
-        }
-
-    } else {
-
-        typingElement.textContent =
-            currentText.substring(0, heroCharIndex - 1);
-
-        heroCharIndex--;
-
-        if (heroCharIndex === 0) {
-
-            heroDeleting = false;
-
-            heroTextIndex =
-                (heroTextIndex + 1) % heroTexts.length;
-        }
-    }
-
-    setTimeout(
-        heroTypeEffect,
-        heroDeleting ? 55 : 90
-    );
-}
-
-heroTypeEffect();
-
-</script>
 
 
     <!-- About -->
